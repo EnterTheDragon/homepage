@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+/*----------- end reset \/\/\/\/\/\/\/>-----/ home / template styles ----------*/
+a {text-decoration: none;}
+body {
+  line-height: 1;
+  font-family: 'Domine', Georgia, serif;
+  background-image: url("images/bg.png");
+     font-size: 1em;
+     color: #121112;
+     background-color: #FFF;
+}
+h1 {
+  width: 100%;
+  height: 0;
+  padding-top: 35%;
+  float: left;
+  background: url("images/Richardsons_Master_Bakers.png") 0 0 no-repeat;
+  background-size: 100% auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+nav {
+  width: 100%; 
+}
+nav ul {
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  width: 22%;
+  font-size: .95em;
+  padding: 1.9% 0;
+  border: 1px solid #555;
+  border-bottom: 0;
+  -moz-border-radius-topleft: 8px;
+-webkit-border-top-left-radius: 8px;
+ border-top-left-radius: 8px;
+-moz-border-radius-topright: 8px;
+-webkit-border-top-right-radius: 8px;
+border-top-right-radius: 7px;
+  background-color: #B76A6A;
+}
+.current{
+  background-color: #873B3B;
+  border-bottom: 1px solid #873B3B;
+}
+nav a:link {color: #DDD;}
+nav a:visited {color: #DDD;}
+nav a:hover {color: #111;}
+nav a:active {color: #DDD;}
+.wrapper {
+  margin-top: -1px;
+  border-top: 1px solid #555;
+  background-color: #873B3B;
+  padding: 3%;
+  overflow: hidden;
+  clear: both;
+}
+.img, .img404 {
+  clear: left;
+  padding-top: 60.4%;
+}
+.img {
+  background: url("images/m_cake2.jpg") 0 0 no-repeat;
+  background-size: 100% auto;
+}
+.img404 {
+  background: url("images/404.jpg") 0 0 no-repeat;
+  background-size: 100% auto;
+}
+.telephone, .address, .opening, article {
+  background-image: url("images/bg.png");
+  background-color: #F2F2F2;
+}
+.telephone {
+  width: 10.5em;
+  padding: .3em;
+  margin: .5em auto 0;
+  text-decoration: underline;
+  text-align: center;
+  color: #9C636B;
+}
+a:link {color: #9C636B;}
+a:visited {color: #9C636B;}
+a:hover {color: #681F1F;}
+a:active {color: #9C636B;}
+.address, .opening {
+  float: left;
+  font-size: .88em;
+  width: 48%;
+  line-height: 1.1em;
+  text-align: center;
+  padding: .3em .5%;
+}
+.address h3, .opening h3 {
+  font-size: 1.16em;
+  padding: .2em 0;
+}
+.address {
+  margin: .6em 1% .6em 0; 
+}
+.opening {
+  margin: .6em 0 .6em 1%; 
+}
+article {
+  clear: left;
+  padding: 0 .3em;
+  line-height: 1.1em;
+  margin: 1em 0;
+  height: auto;
+  overflow: hidden;
+}
+article p {
+  padding: .5em;
+  clear: left;
+}
+article ul {
+  list-style: square;
+  padding: .6em 1.4em;
+}
+article li {
+  padding: .6em;
+}
+.welcome::first-letter {
+  margin-right:-4px;
+  line-height:0.9;
+  font-size: 2em;
+}
+.social-media {
+  line-height: 2em;
+  margin: 0 auto;
+  vertical-align: -.5em;
+}
+.facebook {
+  width: 67px;
+  height: 28px;
+}
+footer {
+  border-top: 3px solid #F7F7F7;
+  padding: 3% 3% 0 3%;
+  color: #F7F7F7;
+  background-color: #252525;
+  margin: 0 auto;
+}
+.copyright {
+  font-size: .8em;
+  clear: left;
+  text-align: center;
+  padding: 2em 0 0;
+}
+iframe {
+  width: 100%;
+  height: 200px;
+}
+.google-map {
+  color:#F7F7F7;
+  font-size:.8em;
+  text-decoration: underline;
+}
+.google-map a:link {color: #F7F7F7;}
+.google-map a:visited {color: #F7F7F7;}
+.google-map a:hover {color: #F7F7F7;}
+.google-map a:active {color: #F7F7F7;}
+
+/*------------------------Order page styles----------------------*/
+.form {
+  margin: 0 auto;
+  width: 230px;
+}
+.form p {
+  float: left;
+  padding: 0;
+}
+.form div {
+  clear: left;
+  padding: 1em 0;
+}
+label {
+  float: right;
+}
+input {
+  width:100%;
+  display:block;
+  border: 1px solid #999;
+  height: 25px;
+}
+textarea {
+  width:100%;
+  height:150px;
+  margin-bottom: 1.5em;
+}
+select { 
+  width: 80px;
+}
+.submit {
+  margin: 2em 0;
+}
+
+/*------------------------Press page styles----------------------*/
+blockquote {
+  padding: 1em 0;
+}
+blockquote p {
+  line-height: 1em;
+  padding: .13em .3em;
+}
+
+/*------------------------Gallery page styles----------------------*/
+.images {
+  width: 280px;
+  margin: 10px auto;
+  display: block;
+}
+.cake {
+  width: 110px;
+  height: 110px;
+  margin: 15px;
+  float: left;
+  display: inline-block;
+}
+.p_gallery {
+  padding: 2.3em .5em .4em;
+}
+.gallery {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*-----------------------Media Queries----------------------------*/
+@media screen and (min-width: 480px) {
+    .images {
+      width: 420px;
+    }
+}
+@media screen and (min-width: 630px) {
+    .images {
+      width: 560px;
+    }
+}
+@media screen and (min-width: 650px) {
+    h1, nav {
+      width: 50%;
+    }
+    h1 {
+      float: left;
+      padding-top: 16.5%;
+    }
+    nav {
+      float: left;
+      padding-top: 14.5%; 
+      margin-bottom: -1px;    
+    }
+    nav li {
+    padding: 8px 0;   
+    }
+    .img, .img404 {
+    clear: left;
+    padding-top: 33.4%;
+    border: solid 3px #F9F9F9;
+    background: url("images/m_cake4.jpg") 0 0 no-repeat;
+    background-size: 100% auto;
+    }
+}
+@media screen and (min-width: 800px) {
+    article {
+      width: 580px;
+      padding: 1.3em 2em;
+      float: right;
+      margin: -118.4% 2.2% 5em 0; 
+    }
+    article, .google-map {
+      -webkit-box-shadow: -1px 1px 0 0 #555;
+      -moz-box-shadow:    -1px 1px 0 0 #555;
+      box-shadow:         -1px 1px 0 0 #555;
+    }
+    .img, .img404 {
+      padding-top: 119.8%;
+      background: url("images/m_cake3.jpg") 0 0 no-repeat;
+      background-size: 100% auto;
+    }
+    .about {
+      position: absolute;
+      width: 41%;
+      top: -.5%;
+      right: 4.5%;
+    }
+    .address, .opening {
+      float: left;
+      font-size: .77em;
+      border: 1px solid #555;
+      width: 47.4%;
+    }
+    .wrapper {
+      height: 880px;
+    }
+    iframe {
+      height: 300px;
+      border: 1px solid #555;
+    }
+    .google-map {
+      width: 300px;
+      /*position: fixed;
+      top: 85%;
+      right: 48.5px;
+      margin: 2em;*/
+      margin: -78.4% 2.2% 5em 1.5%;
+      float: right;
+      background-image: url("images/bg.png");
+      padding: 20px;
+      color: #121012;
+    }
+    .google-map a:link {color: #121012;}
+    .google-map a:visited {color: #121012;}
+    .google-map a:hover {color: #121012;}
+    .google-map a:active {color: #121012;}
+}
+@media screen and (min-width: 962px) {
+    .about {
+      top: .5%;
+    }
+    .address, .opening {
+      font-size: .88em;
+    }
+    article {
+      margin: -114% 7% 0 0;
+      left: 32%;
+    }
+    .google-map {
+      margin: -78.4% 7% 0 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .google-map {
+      margin: -88.4% 7% 0 0;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .google-map {
+      margin: -98.4% 7% 0 0;
+    }
+}

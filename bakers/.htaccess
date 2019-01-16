@@ -1,0 +1,5 @@
+ErrorDocument 400 http://danielmjackson.co.uk/ma/coursework/bakers-revisited/400.php
+ErrorDocument 401 http://danielmjackson.co.uk/ma/coursework/bakers-revisited/401.php
+ErrorDocument 403 http://danielmjackson.co.uk/ma/coursework/bakers-revisited/403.php
+ErrorDocument 404 http://danielmjackson.co.uk/ma/coursework/bakers-revisited/404.php
+ErrorDocument 500 http://danielmjackson.co.uk/ma/coursework/bakers-revisited/500.php

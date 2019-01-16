@@ -1,0 +1,23 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?danielmjackson.co.uk/.*$ [NC]
+RewriteRule \.(gif|jpg|js|css)$ - [F]
+
+SetOutputFilter DEFLATE
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|svg)$ no-gzip
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 4 weeks"
+ExpiresByType image/jpeg "access 4 weeks"
+ExpiresByType image/gif "access 4 weeks"
+ExpiresByType image/png "access 4 weeks"
+ExpiresByType text/css "access 4 weeks"
+ExpiresByType text/html "access 4 weeks"
+ExpiresByType application/pdf "access 4 weeks"
+ExpiresByType text/x-javascript "access 4 weeks"
+ExpiresByType image/x-icon "access 4 weeks"
+ExpiresDefault "access 4 weeks"
+</IfModule>
+## EXPIRES CACHING ##

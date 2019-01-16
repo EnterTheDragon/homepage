@@ -1,0 +1,77 @@
+/*  Main Styles and Overrides  */
+
+h1{
+	text-align: center;
+}
+
+.introduction, .description, .selection{
+	margin: 1rem 0 8rem;
+}
+
+.social-media-intro{
+	text-align: center;
+}
+.stylist-photo{
+	max-width: 200px;
+	height: 200px;
+	margin: 12px auto;
+	border-radius: 50%;
+	background: url(images/stock-photo-image-of-happy-woman-using-laptop-while-sitting.jpg) center center/ 200px 200px no-repeat;
+}
+
+.select-type{
+	h3, h4{
+		text-align: center;
+	}
+	h4{
+		margin: 2rem 0 1.6rem;
+	}
+}
+.container-select{
+	padding-top: 30px;
+	border: 3px solid transparent;
+	margin: 0 auto;
+	.profile{
+		width: 100px;
+		height: 100px;
+		border: 2px solid #9A9A9A;																	
+		margin: 0 auto;
+	}
+	.radio-input, p{
+		text-align: center;
+	}
+}
+.container-selected, .container-select:hover{
+	border: 3px solid #08A0D1;
+	border-radius: 6px;
+	cursor: pointer;
+}
+#pale-tone{background: #FDD3AD};
+#light-tone{background: #E7A36A};
+#dark-tone{background: #B67D4A};
+#ebony-tone{background: #5E4135};
+#dark-hair{background: #241E21};
+#brown-hair{background: #5E3718};
+#blonde-hair{background: #FFD30B};
+#red-hair{background: #C44A24};
+
+.button{
+	margin-top: 2.4rem;
+	background: #12B0E3;
+	border: 3px solid #fff;
+	border-radius: 4px;
+	&:hover{
+		background: #08A0D1;
+		border: 3px solid #fff;
+	}
+	&:active{
+		background: #0890BD;
+		border: 3px double #fff;
+	}
+}
+.product{
+	border: 2px solid #9A9A9A;
+	img{
+		width: 100%;
+	}
+}

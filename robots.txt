@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+
+Sitemap: http://danielmjackson.co.uk/sitemap.xml

@@ -1,0 +1,28 @@
+ ____         __ 
+|    \     __|  |
+|  |  |   |  |  | 
+|____/  @ \_____/ @
+                        
+
+URL: http://danielmjackson.co.uk/
+Twitter: @DanielJackxon
+Location: U.K.
+
+                 
+       [...]
+						
+
+    /* THANKS */
+
+Nicolas Gallagher and Jonathan Neal / normalise.css - https://github.com/necolas/normalize.css
+Dan Benjamin / Email Enkoder - http://hivelogic.com/enkoder/
+Albert Farkas, John-David Dalton, Jonathan Neal and Remy Sharp / Html5 Shiv - https://github.com/aFarkas/html5shiv/
+
+                 
+       [...]
+                        
+
+    /* SITE */
+
+
+Last update: 2017/10/09
