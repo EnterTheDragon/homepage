@@ -5,7 +5,6 @@
                         
 
 URL: http://danielmjackson.co.uk/
-Twitter: @DanielJackxon
 Location: U.K.
 
                  
@@ -25,4 +24,4 @@ Albert Farkas, John-David Dalton, Jonathan Neal and Remy Sharp / Html5 Shiv - ht
     /* SITE */
 
 
-Last update: 2017/10/09
+Last update: 2019/02/25

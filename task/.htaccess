@@ -1,7 +1,0 @@
-
-AuthType basic
-    AuthUserFile "/home/cluster-sites/3/d/danielmjackson.co.uk/public_html/task/.htpasswd"
-    AuthGroupFile /dev/null
-    AuthName "Secure directory"
-    Require valid-user
-    

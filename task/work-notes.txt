@@ -1,8 +1,0 @@
-Work Notes
-
-1.Read the brief and accompanying material and made some ideas in sketchbook, and sketching the layout on paper. I decided to use the Foundation framework as I am familiar with it and I like using the layout.
-2.Designed a prototype in Sketch. Used Shutterstock to get some basic images. Decided to use radio buttons on the selection of the options (face shape, skin colour and hair colour) and also have a border on hover and click on selection
-3.On these selections I added images for face shapes but colours for the other 2 options, I believe this would be easier for users - having a more visual guide
-4.Coded the information in HTML using Foundation classes for all devices.
-5.Added any saying using Sass, decided to use the border selection only on hover. I used the colours.pdf as a style guide
-6.Tried using Foundation Abide Validation for the form but could not get it to work. The aim of using it was to display an error message if any of the row of boxes had not been submitted, disabling the user of pressing the ‘submit’ button until they had been filled in.
