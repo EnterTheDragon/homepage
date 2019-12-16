@@ -19,7 +19,7 @@ a.portfolio-link{
 	display: block;
 }
 .portfolio-link:hover{
-	background-color: #f7f7f7;
+	background-color: #e7e7e7;
 }
 .divider{
 	display: block;
@@ -37,12 +37,20 @@ a.portfolio-link{
 	margin: 0 auto 2em;
 	clear: both;
 }
-.bbwf, .ta, .chris, .ash, .andy, .andy-abbie, .template, .bakers{
+.bbwf, .ta, .chris, .ash, .andy, .andy-abbie, .template, .bakers, .ss-nike, .ss-hoka, .ss-ua{
 	background-position: center center;
 	background-size: 120px 120px;
 }
-.bbwf{
-	background-image: url(images/bbwf_small.jpg);
+.ss-nike{
+	background-image: url(images/nike_small.jpg);
+	background-color:#ddd;
+}
+.ss-hoka{
+	background-image: url(images/hoka_small.jpg);
+	background-color:rgb(20, 20, 119);
+}
+.ss-ua{
+	background-image: url(images/ua_small.jpg);
 	background-color:#667;
 }	
 .ta{
@@ -103,82 +111,79 @@ a.svg:after {
   	bottom: 0;
   	left:0; 
 }
-// @media screen and (min-width: 750px) {
-// 	.portfolio-link{
-// 		text-align: left;
-// 		padding: 0;	
-// 	}
-// 	a.portfolio-link{
-// 		margin: 2em 0;
-// 	}
-// 	.image{
-// 		float: left;
-// 	}
-// 	article{
-// 		clear: none;
-// 		float: left;
-// 		margin: 1em 0 0 2em;
-// 	}
-// 	.divider{
-// 		border-top: 115em 0;
-// 	}
-// }
+
 @media 
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 144dpi) { 
-.bbwf{
-	background-image: url(images/bbwf_medium.jpg);
+	.ss-nike{
+		background-image: url(images/nike_medium.jpg);
+	}
+	.ss-hoka{
+		background-image: url(images/hoka_medium.jpg);
+	}
+	.ss-ua{
+		background-image: url(images/ua_medium.jpg);
+	}	
+	.bbwf{
+		background-image: url(images/bbwf_medium.jpg);
+	}
+	.ta{
+		background-image: url(images/ta_medium.png);
+	}
+	.chris{
+		background-image: url(images/chris-oldfield_medium.png);
+	}
+	.ash{
+		background-image: url(images/ash_medium.jpg);		
+	}
+	.andy{
+		background-image: url(images/andy_medium.jpg);	
+	}
+	.andy-abbie{
+		background-image: url(images/andy-abbie_medium.jpg);	
+	}
+	.template{
+		background-image: url(images/template_medium.png);	
+	}
+	.bakers{
+		background-image: url(images/bakers_medium.jpg);	
+	}
 }
-.ta{
-	background-image: url(images/ta_medium.png);
-}
-.chris{
-	background-image: url(images/chris-oldfield_medium.png);
-}
-.ash{
-	background-image: url(images/ash_medium.jpg);		
-}
-.andy{
-	background-image: url(images/andy_medium.jpg);	
-}
-.andy-abbie{
-	background-image: url(images/andy-abbie_medium.jpg);	
-}
-.template{
-	background-image: url(images/template_medium.png);	
-}
-.bakers{
-	background-image: url(images/bakers_medium.jpg);	
-}
-}
+
 @media 
 (-webkit-min-device-pixel-ratio: 3), 
 (min-resolution: 320dpi) { 
-.bbwf{
-	background-image: url(images/bbwf_large.jpg);
+	.ss-nike{
+		background-image: url(images/nike_large.jpg);
+	}
+	.ss-hoka{
+		background-image: url(images/hoka_large.jpg);
+	}
+	.ss-ua{
+		background-image: url(images/ua_large.jpg);
+	}	
+	.bbwf{
+		background-image: url(images/bbwf_large.jpg);
+	}
+	.ta{
+		background-image: url(images/ta_large.png);
+	}
+	.chris{
+		background-image: url(images/chris-oldfield_large.png);
+	}
+	.ash{
+		background-image: url(images/ash_large.jpg);		
+	}
+	.andy{
+		background-image: url(images/andy_large.jpg);	
+	}
+	.andy-abbie{
+		background-image: url(images/andy-abbie_large.jpg);	
+	}
+	.template{
+		background-image: url(images/template_large.png);	
+	}
+	.bakers{
+		background-image: url(images/bakers_large.jpg);	
+	}
 }
-.ta{
-	background-image: url(images/ta_large.png);
-}
-.chris{
-	background-image: url(images/chris-oldfield_large.png);
-}
-.ash{
-	background-image: url(images/ash_large.jpg);		
-}
-.andy{
-	background-image: url(images/andy_large.jpg);	
-}
-.andy-abbie{
-	background-image: url(images/andy-abbie_large.jpg);	
-}
-.template{
-	background-image: url(images/template_large.png);	
-}
-.bakers{
-	background-image: url(images/bakers_large.jpg);	
-}
-}
-// .portfolio-link img{
-// 	border-radius: 50%;
-// }
