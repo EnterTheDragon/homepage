@@ -24,4 +24,4 @@ Albert Farkas, John-David Dalton, Jonathan Neal and Remy Sharp / Html5 Shiv - ht
     /* SITE */
 
 
-Last update: 2019/02/25
+Last update: 2020/08/04
