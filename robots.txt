@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 
 
-Sitemap: http://danielmjackson.co.uk/sitemap.xml
+Sitemap: https://danielmjackson.co.uk/sitemap.xml

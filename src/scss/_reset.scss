@@ -1,0 +1,49 @@
+html {
+    line-height: 1.56;
+    font-feature-settings: "ss01" 1, "ss03" 0, "ss09" 1, "ss11" 1;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-variant-numeric: lining-nums; 
+}
+*,
+::before,
+::after {
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all .75s ease;
+}
+
+::-moz-selection {
+    background: #7cd38d;
+    color: #fff;
+}
+::selection {
+    background: #7cd38d;
+    color: #fff;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    text-decoration: none;
+    color: #0a0a0a;
+    &:active, &:hover {
+        outline-width: 0;
+    }
+}
+img {
+    border-style: none;
+    max-width: 100%;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+
+i, em {
+	font-style: italic;
+}
+b,
+strong {
+	font-weight: bolder;
+}
