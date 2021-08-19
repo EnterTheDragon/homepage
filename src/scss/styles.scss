@@ -153,6 +153,7 @@ p {
 	padding: 22px 16px;
 	max-width: 700px;
 	display: block;
+
 	&:hover, &:active {
 		.gr__heading {
 			text-decoration: underline $black;
@@ -214,12 +215,12 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-	a, .gr__heading a {
-		color: #fff;
-
+	.gr__heading {
+		color: #eee;
 	}
-	.gr__heading a:hover, .gr__heading a:active {
-		text-decoration: underline #fff;
+	.tag_cont li {
+		background: #3a3a3a;
+		color: #eee;
 	}
 	.main_header, body {
 		background: $black;
