@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="144px" height="144px"><svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="SvgjsG1003" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SvgjsG1002">
+        	<style>
+        	  path { fill: #3E3E3E; }
+        	  circle { fill: #D8D8D8; }
+        	  @media (prefers-color-scheme: dark) {
+        	    path { fill: #D8D8D8; }
+        	    circle { fill: #3E3E3E; }
+        	  }
+        	</style>
+            <circle id="SvgjsCircle1001" cx="72" cy="72" r="72"></circle>
+            <path d="M72,8 C107.346224,8 136,36.653776 136,72 C136,107.346224 107.346224,136 72,136 C65.4256758,136 59.0828784,135.008716 53.112921,133.167462 C71.8500988,119.325443 84,97.0816023 84,72 C84,46.9183977 71.8500988,24.6745569 53.1148216,10.8330029 C59.0828784,8.99128387 65.4256758,8 72,8 Z" id="SvgjsPath1000"></path>
+
+        </g>
+    </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: invert(100%); } }
+</style></svg>

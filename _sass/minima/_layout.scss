@@ -1,14 +1,3 @@
-@import 'fonts';
-@import 'reset';
-$red : #f00;
-$black : #161616;
-
-body {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-	background: #fff;
-	color: $black;
-	letter-spacing: .0126em;
-}
 h1, .main_header__subh, .main_header__nav {
 	position: relative;
 	z-index: 1;
@@ -18,7 +7,6 @@ h1, .main_header__subh, .gr__heading, .intro__heading {
 	font-weight: normal;
 	font-style: normal;
 	color: #fff;
-	
 }
 h1 {
 	font-size: 43px;
@@ -26,19 +14,6 @@ h1 {
 	font-size: 32px;
 	padding: 8vw 0 .1em;
 	letter-spacing: .06em;
-}
-h3 {
-	font-size: 16px;
-	font-weight: 400;
-	// margin: 0.8em 0 0.6em;
-	color: $black;
-	a {
-		text-decoration: underline;
-	}
-}
-p {
-	margin-bottom: .4em;
-	color: $black;
 }
 
 .main_header__subh {
@@ -104,9 +79,10 @@ p {
 		width: 100%;
 	}
 }
-.intro {
+.intro, .blog_home, .post {
 	padding: 88px 4vw 100px;
 	max-width: 960px;
+	margin: 0 auto;
 }
 .intro__heading {
 	color: $black;
@@ -115,9 +91,11 @@ p {
 	margin: 0 0 .6em;
 }
 .intro__para {
-	font-size: 18px;
+	margin-bottom: .4em;
 }
-
+.blog_home, .post {
+	max-width: 860px;
+}
 .gr {
 	padding: 1.6vw 4vw;
 }
@@ -133,15 +111,9 @@ p {
 	text-transform: uppercase;
 	font-size: 17.8px;
 	letter-spacing: .11em;
-	margin: 0 0 0.4em;
+	margin: 0 0 0.488em;
 	color: $black;
 	text-decoration: underline transparent;
-	// a {
-		
-	// 	&:hover, &:active {
-			
-	// 	}
-	// }
 }
 .gr__para {
 	font-size: 16.8px;
@@ -166,6 +138,7 @@ p {
 }
 .tag_cont {
     list-style: none;
+	margin: 0;
 	li {
 		font-size: 14px;
 		background: #efefef;
@@ -177,20 +150,32 @@ p {
 	}
 }
 
-footer {
+.main_footer {
 	display: flex;
 	flex-direction: row;
 	padding: 0 8px 0 21px;
 	border-top: 2px solid $black;
+	h3 {
+		margin: 0;
+		font-size: 11.4px;
+	}
 }
 .social {
     padding: 8px 32px 8px 0;
     border-right: 2px solid $black;
 }
+.icon_text {
+	text-decoration: underline transparent;
+}
 .social__link {
     display: flex;
     align-items: center;
     flex-direction: row;
+	&:hover {
+		.icon_text {
+			text-decoration: underline solid;
+		}
+	}
 }
 .social__icon {
     width: 28px;
@@ -204,10 +189,75 @@ footer {
 	display: flex;
 	align-items: center;
 }
+.fi__item__a {
+	text-decoration: underline solid;
+}
+// blog styling
+.post-content {
+	h2, h3 {
+		margin-top: 60px;
+	}
+}
+.post-header {
+    margin-bottom: 30px;
+}
+.post-list {
+	margin: 0 auto;
+}
+.post-title {
+	font-size: 2.42rem;
+	line-height: 1.15;
+	letter-spacing: 0;
+	margin-bottom: 1.12rem;
+}
+.post-meta {
+    font-size: 16px;
+}
+.post-list-heading {
+	font-size: 36px;
+	margin: 0 0 .88rem;
+}
+.post-list {
+	li {
+		list-style: none;
+		margin: 0 0 30px;
+		border-bottom: 1px solid #666;
+		padding: 0 0 30px;
+	}
+	h3 {
+		font-size: 1.625rem;
+		text-decoration: underline transparent;
+	}
+}
+.post-link {
+	&:hover {
+		h3 {
+			text-decoration: underline solid;
+		}
+	}
+}
+.rss-subscribe {
+	margin: 48px 0;
+	font-size: 16px;
+	display: inline-block;
+	text-decoration: underline transparent;
+	&:hover {
+		text-decoration: underline solid;
+	}
+}
+.svg-icon {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    fill: currentColor;
+    vertical-align: text-bottom;
+    margin: 0 8px 3px 0;
+}
+.orange {
+    color: #f66a0a;
+}
 
-
-
-@supports (-webkit-text-stroke: 1px $black) {
+@supports (-webkit-text-stroke: .05em #fff) {
 	h1, .main_header__subh {
 		-webkit-text-stroke: .05em #fff;
 		-webkit-text-fill-color: $black;
@@ -215,8 +265,16 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-	a, .gr__heading {
+	body, a, .gr__heading {
 		color: #eee;
+	}
+	table {
+		th {
+			background-color: #282923;
+		}
+		tr:nth-child(2n) {
+			background-color: darken(#282923, 4%);
+		}
 	}
 	.tag_cont li {
 		background: #3a3a3a;
@@ -225,12 +283,15 @@ footer {
 	.main_header, body {
 		background: $black;
 	}
-	h1, .main_header__subh {
+	h1, .main_header__subh, .intro__heading {
 		-webkit-text-stroke: .05em $black;
 		-webkit-text-fill-color: #fff;
 	}
 	h3, p {
 		color: #eee;
+	}
+	.post code {
+		background: #282923;
 	}
 	.mh_g0:after {
 		content: "";
@@ -239,21 +300,37 @@ footer {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: #0a0a0a;
+		background: rgba(#000, .7);
 	}
 	.social__icon {
 		filter: invert(100%);
 	}
-	footer {
+	.main_footer {
 		border-top: 2px solid #eee;
 	}
 	.social {
 		border-right: 2px solid #eee;
 	}
+	.gr__inner {	
+		&:hover, &:active {
+			.gr__heading {
+				text-decoration: underline #eee;
+			}
+		}
+	}
 	
 }
-
+@media only screen and (min-width: 370px) {
+	.main_footer {
+		h3 {
+			font-size: 16px;
+		}
+	}
+}
 @media only screen and (min-width: 600px) {
+	html {
+		font-size: 14.8px;
+	}
 	.main_header {	
 		height: 54vw;
 		padding: 1.6vw 2vw;
@@ -264,16 +341,19 @@ footer {
 	.gr__heading {
 		font-size: 20px;
 	}
-	.intro {
-		padding: 128px 2vw 144px;
+	.intro, .blog_home, .post {
+		padding: 128px 38px 144px;
 	}
 	.intro__heading {
-		font-size: 26px;
+		font-size: 28px;
+	}
+	.post-list-heading {
+		font-size: 40px;
 	}
 }
 @media only screen and (min-width: 800px) {
-	.intro {
-		margin: 0 auto;
+	html {
+		font-size: 16px;
 	}
 	.gr__section {
 		width: 700px;
@@ -290,9 +370,6 @@ footer {
 			width: 47%;
 		}
 	}
-	.intro__para {
-		font-size: 19.4px;
-	}
 }
 
 @media only screen and (min-width: 1640px) {
@@ -303,6 +380,6 @@ footer {
 		font-size: 24px;
 	}
 	.nav__anchor {
-		font-size: 17.5px;
+		font-size: 18.2px;
 	}
 }

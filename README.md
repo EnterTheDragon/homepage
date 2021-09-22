@@ -1,5 +1,7 @@
 # My personal homepage
-Portfolio of my frontend work. this is a work in progress!!!
+Portfolio of my frontend work and blog.
+this is a work in progress!!!
+Site built in [Jekyll](https://jekyllrb.com/) using the [Minima](https://github.com/jekyll/minima) theme
 
 ## Fonts used on site:
 ### title / display:
