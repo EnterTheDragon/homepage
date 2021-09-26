@@ -26,6 +26,7 @@ h1 {
 	position: relative;
 	overflow: hidden;
 	padding: 1.6vw 4vw;
+	border-bottom: 2px solid $black;
 }
 .main_header__nav {
     text-align: right;
@@ -121,18 +122,22 @@ h1 {
 	font-size: 16.8px;
 }
 .gr__inner {
-	border: 1px solid darkgray;
-	border-radius: 4px;
-	margin: 16px 0 22px;
-	padding: 22px 16px;
 	max-width: 700px;
 	display: block;
-
 	&:hover, &:active {
 		.gr__heading {
 			-webkit-text-decoration: underline $black;
 			text-decoration: underline $black;
 		}
+	}
+}
+.box_shadow_hovr {
+	border: 1px solid darkgray;
+	border-radius: 4px;
+	margin: 16px 0 22px;
+	padding: 22px 16px;
+	&:hover, &:active {
+		box-shadow: .5rem .75rem .75rem rgba(2,2,2,.1);
 	}
 }
 .gr__ft {
@@ -142,15 +147,15 @@ h1 {
 .tag_cont {
     list-style: none;
 	margin: 0;
-	li {
-		font-size: 14px;
-		background: #efefef;
-		padding: 0 .4em;
-		border: 1px solid darkgray;
-		border-radius: 4px;
-		margin: 2px 2px 4px 0;
-		display: inline-block;
-	}
+}
+.tag_cont li, .dt-published {
+	font-size: 14px;
+	background: #efefef;
+	padding: 0 .4em;
+	border: 1px solid darkgray;
+	border-radius: 4px;
+	margin: 2px 2px 4px 0;
+	display: inline-block;
 }
 
 .main_footer {
@@ -218,6 +223,7 @@ h1 {
 }
 .post-meta {
     font-size: 16px;
+	margin-bottom: 1.38rem;
 }
 .post-list-heading {
 	font-size: 36px;
@@ -225,15 +231,18 @@ h1 {
 }
 .post-list {
 	li {
-		list-style: none;
-		margin: 0 0 30px;
-		border-bottom: 1px solid #666;
-		padding: 0 0 30px;
+		list-style: none;	
 	}
 	h3 {
 		font-size: 1.625rem;
 		-webkit-text-decoration: underline transparent;
 		text-decoration: underline transparent;
+	}
+	a {
+		// margin: 0 0 30px;
+		// border-bottom: 1px solid #666;
+		// padding: 0 0 30px;
+		display: block;
 	}
 }
 .post-link {
@@ -274,63 +283,7 @@ h1 {
 	}
 }
 
-@media (prefers-color-scheme: dark) {
-	body, a, .gr__heading {
-		color: #eee;
-	}
-	table {
-		th {
-			background-color: #282923;
-		}
-		tr:nth-child(2n) {
-			background-color: darken(#282923, 4%);
-		}
-	}
-	.tag_cont li {
-		background: #3a3a3a;
-		color: #eee;
-	}
-	.main_header, body {
-		background: $black;
-	}
-	h1, .main_header__subh, .intro__heading {
-		-webkit-text-stroke: .05em $black;
-		-webkit-text-fill-color: #fff;
-	}
-	h3, p {
-		color: #eee;
-	}
-	.post code {
-		background: #282923;
-	}
-	.mh_g0:after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(#000, .7);
-	}
-	.social__icon {
-		filter: invert(100%);
-	}
-	.main_footer {
-		border-top: 2px solid #eee;
-	}
-	.social {
-		border-right: 2px solid #eee;
-	}
-	.gr__inner {	
-		&:hover, &:active {
-			.gr__heading {
-				-webkit-text-decoration: underline #eee;
-				text-decoration: underline #eee;
-			}
-		}
-	}
-	
-}
+
 @media only screen and (min-width: 370px) {
 	.main_footer {
 		h3 {
@@ -372,6 +325,12 @@ h1 {
 	}
 }
 
+@media only screen and (min-width: 1000px) {
+	.blog_home, .post {
+		border-left: 2px solid $black;
+	}
+}
+
 @media only screen and (min-width: 1100px) {
 	.main_header {	
 		height: 30vw;
@@ -392,5 +351,68 @@ h1 {
 	}
 	.nav__anchor {
 		font-size: 18.2px;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body, a, .gr__heading {
+		color: #eee;
+	}
+	table {
+		th {
+			background-color: #282923;
+		}
+		tr:nth-child(2n) {
+			background-color: darken(#282923, 4%);
+		}
+	}
+	.tag_cont li, .dt-published {
+		background: #3a3a3a;
+		color: #eee;
+	}
+	.main_header, body {
+		background: $black;
+	}
+	h1, .main_header__subh, .intro__heading {
+		-webkit-text-stroke: .05em $black;
+		-webkit-text-fill-color: #fff;
+	}
+	h3, p {
+		color: #eee;
+	}
+	.post code {
+		background: #282923;
+	}
+	.mh_g0:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(#000, .7);
+	}
+	.social__icon {
+		filter: invert(100%);
+	}
+	.main_header {	
+		border-bottom: 2px solid #eee;
+	}
+	.main_footer {
+		border-top: 2px solid #eee;
+	}
+	.social {
+		border-right: 2px solid #eee;
+	}
+	.gr__inner {	
+		&:hover, &:active {
+			.gr__heading {
+				-webkit-text-decoration: underline #eee;
+				text-decoration: underline #eee;
+			}
+		}
+	}
+	.blog_home, .post {
+		border-left: 2px solid #eee;
 	}
 }

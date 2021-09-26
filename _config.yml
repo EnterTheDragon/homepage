@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Daniel Jackson - frontend web developer and designer
+
 name: Daniel Jackson
 author: Daniel Jackson
 subtitle: Frontend web developer and designer
 email: danielmjackson1@gmail.com
-# description: Daniel Jackson, frontend developer and designer based in West Yorkshire, UK.
+description: Personal homepage of Daniel Jackson, a frontend developer and designer based in West Yorkshire, UK.
 # baseurl: "" # the subpath of your site, e.g. /blog
 locale: en-gb
 url: https://danielmjackson.co.uk # the base hostname & protocol for your site, e.g. http://example.com
@@ -45,6 +45,8 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+show_excerpts: true
 
 sass:
   style: compressed

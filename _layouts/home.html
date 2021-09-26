@@ -13,16 +13,16 @@ layout: default
     <h2 class="intro__heading post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        <li>
+      <li>
+        <a class="post-link box_shadow_hovr" href="{{ post.url | relative_url }}">
           <h3>{{ post.title | escape }}</h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
           {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
-          <span class="post-meta">{{ post.date | date_to_long_string }}</span>
-        </li>
-      </a>
+          <p class="post-meta"><time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time></p>
+          {%- if site.show_excerpts -%}
+            <p>{{ post.excerpt | strip_html}}</p>
+          {%- endif -%}
+        </a>
+      </li>
       {%- endfor -%}
     </ul>
 

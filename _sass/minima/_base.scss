@@ -104,12 +104,15 @@ p, li, h6 {
 p {
 	margin-bottom: 1.2em;
 	color: $black;
+  a {
+    text-decoration: underline;
+  }
 }
 
 
 blockquote {
   color: #828282;
-  border-left: 4px solid #e8e8e8;
+  border-left: 4px solid rgba(#7cd38d, .8);
   padding-left: 15px;
   font-size: 1.125rem;
   font-style: italic;
@@ -149,7 +152,7 @@ table {
   text-align: left;
   border-collapse: collapse;
   display: block;
-  overflow-x: scroll;
+  overflow-x: auto;
   tr {
     &:nth-child(2n) {
       background-color: #f7f7f7;
