@@ -24,7 +24,7 @@ author: Daniel Jackson
 subtitle: Frontend web developer and designer
 email: danielmjackson1@gmail.com
 description: Personal homepage of Daniel Jackson, a frontend developer and designer based in West Yorkshire, UK.
-# baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 locale: en-gb
 url: https://danielmjackson.co.uk # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  EnterTheDragon
