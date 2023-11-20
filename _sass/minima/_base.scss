@@ -3,27 +3,28 @@ $black : #161616;
 
 @font-face {
   font-family: 'Foundation Sans Black';
-  src: url('../fonts/FoundationSans-BlackEx-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
   font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/FoundationSans-BlackEx-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('../fonts/Raleway-v4020-Medium.otf') format('OpenType');
-  font-weight: 500;
-  font-style: normal;
   font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Raleway-v4020-Medium.otf') format('OpenType');
 }
 
 html {
-  line-height: 1.56;
   font-feature-settings: "ss01" 1, "ss03" 0, "ss09" 1, "ss11" 1;
+  font-size: 14px;
+  font-variant-numeric: lining-nums;
+  line-height: 1.56;
+  text-size-adjust: none;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-variant-numeric: lining-nums;
-  font-size: 14px;
 }
 *,
 *:before,
@@ -34,10 +35,6 @@ html {
   transition: all .75s ease;
 }
 
-::-moz-selection {
-  background: #7cd38d;
-  color: #fff;
-}
 ::selection {
   background: #7cd38d;
   color: #fff;
@@ -45,9 +42,9 @@ html {
 
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-  text-decoration: none;
   color: #0a0a0a;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
   &:active, &:hover {
       outline-width: 0;
   }
@@ -69,14 +66,15 @@ font-weight: bolder;
 }
 
 body {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   background: #fff;
   color: #161616;
-  letter-spacing: .0126em;
-  font-kerning: normal;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-kerning: normal;
+  justify-content: flex-start;
+  letter-spacing: .0126em;
+  min-height: 100vh;
   overflow-wrap: break-word;
 }
 
@@ -85,6 +83,7 @@ h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure {
 }
 h2, h3, h4, h5, h6 {
 	font-weight: 400;
+  text-wrap: balance;
 }
 h2 {
   font-size: 2.1rem;
@@ -111,11 +110,11 @@ p {
 
 
 blockquote {
-  color: #828282;
   border-left: 4px solid rgba(#7cd38d, .8);
-  padding-left: 15px;
+  color: #828282;
   font-size: 1.125rem;
   font-style: italic;
+  padding-left: 15px;
 }
 
 /**
@@ -129,38 +128,38 @@ code {
  
 .post code {
   padding: 1px 5px;
+  background: #ededed;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
-  background: #ededed;
 }
  
 pre.highlight {
-  padding: 8px 12px;
-  overflow-x: auto;
   background: #282923;
+  overflow-x: auto;
+  padding: 8px 12px;
   & > code {
+    background-color: transparent;
     border: 0;
     padding: 0;
     font-size: 1.025rem;
-    background-color: transparent;
   }
 }
 
 table {
-  margin-bottom: 30px;
-  width: 100%;
-  text-align: left;
   border-collapse: collapse;
   display: block;
+  margin-bottom: 30px;
   overflow-x: auto;
+  text-align: left;
+  width: 100%;
   tr {
     &:nth-child(2n) {
       background-color: #f7f7f7;
     }
   }
   th, td {
-    padding: 10px 15px;
     font-size: 16px;
+    padding: 10px 15px;
   }
   th {
     background-color: #f0f0f0;

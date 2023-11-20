@@ -6,7 +6,8 @@
     {% endfor %}
       <a href="/blog" class="nav__anchor{% if page.url == '/blog' or page.path contains "_posts/" %} active{% endif %}">Blog</a>
   </nav>
-
-  <h1 class="main_header__heading">{{ site.name }}</h1>
-  <h2 class="main_header__subh">{{ site.subtitle }}</h2>
+  <div class="main_header__cont">
+    <h1 class="main_header__heading">{{ site.name }}</h1>
+    <h2 class="main_header__subh">{{ site.subtitle }}</h2>
+  </div>
 </header>

@@ -45,10 +45,12 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-webp
 
 show_excerpts: true
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 # Exclude from processing.
@@ -83,7 +85,7 @@ webp:
 
   # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
   # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
-  img_dir: ["images"]
+  img_dir: ["images/x1", "images/x2"]
 
   # Whether to search in nested directories or not
   nested: true
@@ -95,11 +97,11 @@ webp:
   gifs: [".gif"]
 
   # Set to true to always regenerate existing webp files
-  regenerate: false
+  regenerate: true
 
   # Local path to the WebP utilities to use (relative or absolute)
   # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
-  # webp_path: nil
+  webp_path: ["images"]
 
   # List of files or directories to exclude
   # e.g. custom or hand generated webp conversion files
